@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Slab:wght@300&family=Poppins:wght@300&display=swap');
+
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-family: 'Stem';
+font-family: 'Poppins', sans-serif;}
+html, body{margin: 0;padding: 0;}
+header, section, article, aside, main, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, main:after, nav:after, footer:after{display: block;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+.hand{font-family: 'Great Vibes', cursive;}
+.jose{font-family: 'Josefin Slab', serif;}
+
+
+/*header 영역*/
+header{width: 100%;height: auto;position: absolute;left: 0;top: 0;z-index: 1;}
+header .top{height: 20px;background-color: #474747;}
+header .top .wrap{width: 1200px;margin: 0 auto;}
+/* left/right_ ul li가 같기때문에 한번에 적용해주면 좋다._선생님예시
+header .top .wrap > div > ul{padindg: 4px 0;} 
+header .top .wrap > div > ul > li{display:inline-block;}
+header .top .wrap > div > ul > li > a {display:block;line-height:20px;color:#fff;font-size:12px;padding:0 10px;border-right:1px solid #fff;}
+*/
+header .top .wrap .left{float: left;}
+header .top .wrap .left ul{}
+header .top .wrap .left ul li{float: left;font-size: 12px;color: #fff;padding: 0 10px;border-left: 1px solid #fff;line-height: 1;margin: 4px 0;}
+header .top .wrap .left ul li:first-child{border: none;}
+header .top .wrap .right{float: right;}
+header .top .wrap .right ul{}
+header .top .wrap .right ul li{float: left;}
+header .top .wrap .right ul li a{display: block;color: #fff;font-size: 12px;text-transform: uppercase;padding: 0 10px;border-left:1px solid #fff;line-height: 1;margin: 4px 0;}
+header .top .wrap .right ul li:first-child a{border:none;}
+
+header .bottom{height: 60px;background-color: rgba(255, 255, 255, 0.75);}
+header .bottom .wrap{width: 1200px;margin: 0 auto;}
+header .bottom .wrap ul{text-align: center;font-size: 0;padding: 15px 0;}
+header .bottom .wrap ul li{display: inline-block;font-size: 16px;width: calc(100% / 6);vertical-align: middle;}
+header .bottom .wrap ul li a{display: block;color: #b2b3b4;padding: 0 10px;}
+header .bottom .wrap ul li a img{display: block;width: 100%;}
+header .bottom .wrap ul li:hover a{color: #777777;font-weight: bold;}
+
+/* position을 이용한 방법
+header .bottom .wrap{width:1200px;margin:0 auto;position:relative;}
+header .bottom .wrap ul{text-align:center;font-size:0;padding:22px 0;}
+header .bottom .wrap ul li{display:inline-block;width:calc(100% / 6);}
+header .main .wrap ul li nth-child(2){margin-right: calc(100% / 12);}
+header .main .wrap ul li nth-child(3){margin-left:calc(100% / 12);}
+
+header .main .wrap ul li a{display:block;font-size:16px;color:#777;padding:0 10px;}
+header .main .wrap ul li:hover a{font-weight:bold;}
+header .main .wrap .logo{position:absolute;top:50%;left:50%;transform:(translate(-50%, -50%);}
+header .main .wrap .logo a{display:block;}
+header .main .wrap .logo a img{display:block;width:180px;*height:30px;*}//로고는 높이값을 잡는것이 낫다.
+*/
+
+/*footer 영역*/
+/* footer{width: 100%;height: auto;background-color: #000;padding: 20px 0;}
+footer .wrap{width: 1200px;margin: 0 auto;}
+footer .wrap .copy{}
+footer .wrap .copy ul{font-size: 0;text-align: center;}
+footer .wrap .copy ul li{display: inline-block;font-size: 16px;}
+footer .wrap .copy ul li a{display: inline-block;color: #fff;vertical-align: middle;font-weight: normal;}
+footer .wrap .copy ul li a img{height: 35px;padding: 0 15px;} */
+
+footer{background-color: #000;text-align: center;}
+footer p{display: inline-block;line-height: 60px;padding-left:50px;padding-right: 50px;position: relative;color: #fff;}
+footer p:before{content: "";display: block;position: absolute;top: 0;left: 0;width: 50px;height: 100%;background-image: url(../images/h1-slider1-img-1.png);background-size: auto 40px;background-repeat: no-repeat;background-position: 0 50%;}
+footer p:after{content: "";display: block;position: absolute;top: 0;right: 0;width: 50px;height: 100%;background-image: url(../images/h1-slider1-img-2.png);background-size: auto 40px;background-repeat: no-repeat;background-position: 100% 50%;}
